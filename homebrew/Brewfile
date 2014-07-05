@@ -1,0 +1,49 @@
+# Make sure we're using the latest Homebrew
+update
+
+# Upgrade any already-install formulae
+upgrade
+
+# Add Repos
+tap caskroom/cask
+
+# Git
+install git
+install tig
+
+# Languages
+install rust
+install haskell-platform
+install python3
+install go
+
+# Utils
+install curl
+install rtorrent
+install nmap
+install tree
+install wget --enable-iri
+install vim --override-system-vi
+install cowsay
+
+# Casks
+install brew-cask
+cask install google-chrome || true
+cask install iterm2 || true
+cask install hipchat || true
+cask install alfred || true
+cask install sublime-text || true
+cask install dropbox || true
+cask install onepassword || true
+cask install citrix-receiver || true
+cask install transmission || true
+cask install vlc || true
+cask install openemu || true
+cask install caffeine || true
+cask install java || true
+cask install steam || true
+cask install the-unarchiver || true
+cask install evernote || true
+#cask install bittorrent-sync || true
+
+cleanup
