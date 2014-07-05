@@ -13,6 +13,6 @@ then
 fi
 
 # Install homebrew packages
-brew bundle ~/.brewbundle
+brew bundle ~/.brewfile
 
 exit 0
