@@ -1,0 +1,23 @@
+[user]
+	name = Matthew McDole
+	email = matthew.d.mcdole@ehi.com
+[push]
+	default = current
+[alias]
+        cl = clone
+        ci = commit
+        co = checkout
+        br = for-each-ref --count=30 --sort=-committerdate refs/heads/ --format='%(refname:short)'
+        r = reset
+        sl = stash list
+        sa = stash apply
+        ss = stash save
+        mg = mergetool -y -t opendiff
+        lp = log --pretty=oneline --abbrev-commit
+[difftool]
+	prompt = false
+[color]
+	branch = auto
+	diff = auto
+	interactive = auto
+	status = auto
