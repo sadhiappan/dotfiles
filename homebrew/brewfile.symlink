@@ -18,6 +18,7 @@ install python3
 install go
 
 # Utils
+install cmake
 install curl
 install rtorrent
 install nmap
