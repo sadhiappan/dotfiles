@@ -18,6 +18,7 @@ install python3
 install go
 
 # Utils
+install tmux
 install cmake
 install curl
 install rtorrent
@@ -45,6 +46,9 @@ cask install java || true
 cask install steam || true
 cask install the-unarchiver || true
 cask install evernote || true
+cask install spotify || true
+cask install calibre || true
+cask install licecap || true
 #cask install bittorrent-sync || true
 
 cleanup
