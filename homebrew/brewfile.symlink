@@ -18,6 +18,7 @@ install python3
 install go
 
 # Utils
+install tintin
 install tmux
 install cmake
 install curl
