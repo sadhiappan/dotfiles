@@ -1,18 +1,71 @@
-#!/bin/sh
-#
-# Homebrew
-#
-# This installs some of the common dependencies needed (or at least desired)
-# using Homebrew.
+#!/bin/bash -e
 
-# Check for Homebrew
-if test ! $(which brew)
-then 
-  echo "  InstallingHomebrew for you."
-  ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)" > /tmp/homebrew-install.log
+which -s brew && brew update
+which -s brew || ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
+
+taps=(
+  homebrew/binary
+  caskroom/cask
+)
+
+formulae=(
+  brew-cask
+  git
+#  rust
+  go
+  tintin
+  tmux
+  cmake
+  curl
+#  rtorrent
+  nmap
+  tree
+  hub
+  selecta
+  wget
+  vim --override-system-vi
+)
+
+casks=(
+  iterm2
+  hipchat
+  google-chrome
+  alfred
+  sublime-text
+  dropbox
+  onepassword
+  citrix-receiver
+  transmission
+  vlc
+  openemu
+  caffeine
+  java
+  steam
+  spotify
+  calibre
+  licecap
+  qlcolorcode
+  qlmarkdown
+  quicklook-csv
+  quicklook-json
+  virtualbox
+)
+
+if ! brew doctor; then
+  echo "
+\`brew doctor\` failed. Please resolve issues before continuing.
+  "
+  exit 1
 fi
 
-# Install homebrew packages
-brew bundle ~/.brewfile
+for tap in "${taps[@]}"; do
+  brew tap $tap
+done
 
-exit 0
+for formula in "${formulae[@]}"; do
+  brew install $formula || brew upgrade $formula
+done
+
+for cask in "${casks[@]}"; do
+  brew cask install $cask
+done
