@@ -104,3 +104,4 @@ set sidescroll=1
 
 
 " ================ Custom Settings ========================
+color jellybeans
