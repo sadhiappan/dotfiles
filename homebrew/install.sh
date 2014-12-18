@@ -11,7 +11,6 @@ taps=(
 formulae=(
   brew-cask
   git
-#  rust
   go
   tintin
   tmux
@@ -24,6 +23,7 @@ formulae=(
   selecta
   wget
   vim --override-system-vi
+  cloc
 )
 
 casks=(
@@ -49,6 +49,7 @@ casks=(
   quicklook-csv
   quicklook-json
   virtualbox
+  iexplorer
 )
 
 if ! brew doctor; then
