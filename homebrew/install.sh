@@ -33,7 +33,7 @@ casks=(
   alfred
   sublime-text
   dropbox
-  onepassword
+  1password
   citrix-receiver
   transmission
   vlc
