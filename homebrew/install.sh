@@ -38,7 +38,7 @@ casks=(
   transmission
   vlc
   openemu
-  caffeine
+  keepingyouawake
   java
   steam
   spotify
