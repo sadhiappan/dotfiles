@@ -105,3 +105,9 @@ set sidescroll=1
 
 " ================ Custom Settings ========================
 color jellybeans
+nnoremap <leader>ev :vsplit ~/.vimrc<cr>
+nnoremap <leader>sv :source ~/.vimrc<cr>
+
+nnoremap <leader>rr :RustRun<cr>
+nnoremap <leader>tr :RustRun! --test<cr>
+let delimitMate_expand_cr=1

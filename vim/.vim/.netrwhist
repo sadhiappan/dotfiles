@@ -1,10 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =8
-let g:netrw_dirhist_1='/Users/mmcdole/Documents/code/unify/bldConfig/resources'
-let g:netrw_dirhist_2='/Users/mmcdole/Documents/code/carshare-mob-iphone/src'
-let g:netrw_dirhist_3='/Users/mmcdole/Documents/code/carshare-mob-iphone/src/CarShare'
-let g:netrw_dirhist_4='/Users/mmcdole/Documents/code/carshare-mob-iphone/src/CarShare/Resources'
-let g:netrw_dirhist_5='/Users/mmcdole/Documents/code/carshare-mob-iphone/src/CarShare/Resources/Supporting Files'
-let g:netrw_dirhist_6='/Users/mmcdole/unify/bldConfig'
-let g:netrw_dirhist_7='/Users/mmcdole/unify/src'
-let g:netrw_dirhist_8='/Users/mmcdole/Documents/code/unify/src'
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/Users/mmcdole/.dotfiles/vim/.vim/bundle/rust.vim/syntax'
+let g:netrw_dirhist_2='/Users/mmcdole/Documents/code'
+let g:netrw_dirhist_3='/Users/mmcdole/Documents/code/nestor'
+let g:netrw_dirhist_4='/Users/mmcdole/Documents/code/nestor/src'

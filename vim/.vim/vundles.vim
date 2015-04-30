@@ -1,3 +1,4 @@
+filetype off
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -6,7 +7,10 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 
 Plugin 'tpope/vim-fugitive'
+Plugin 'raimondi/delimitMate'
+Plugin 'tpope/vim-surround'
 Plugin 'kien/ctrlp.vim'
+Plugin 'wting/rust.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
