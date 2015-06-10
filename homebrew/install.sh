@@ -17,6 +17,7 @@ formulae=(
   cmake
   curl
 #  rtorrent
+  python
   nmap
   tree
   hub
