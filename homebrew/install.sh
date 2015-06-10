@@ -18,6 +18,7 @@ formulae=(
   curl
 #  rtorrent
   python
+  coreutils
   nmap
   tree
   hub
