@@ -11,6 +11,7 @@ taps=(
 formulae=(
   vim --override-system-vi
   stow
+  ssh-copy-id
   brew-cask
   git
   go
@@ -31,6 +32,7 @@ formulae=(
 casks=(
   iterm2
   hipchat
+  sequel-pro
   google-chrome
   alfred
   sublime-text
