@@ -1,5 +1,7 @@
 #!/bin/bash
 
+cd "$(dirname "${BASH_SOURCE}")";
+
 set -e
 
 # Ask for Sudo upfront
@@ -16,27 +18,12 @@ if [[ ! -x /usr/bin/gcc ]]; then
     xcode-select --install
 fi
 
-# Download and install Homebrew
-if [[ ! -x /usr/local/bin/brew ]]; then
-    echo "Info   | Install   | homebrew"
-    ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
-fi
+# Delete any broken symlinks in home
+find ~ -maxdepth 1 -follow  -type l -delete
 
-# Download and install git
-if [[ ! -x /usr/local/bin/git ]]; then
-    echo "Info   | Install   | git"
-    brew install git
-fi
+sh scripts/brew.sh
+sh scripts/osx.sh
 
-# Download and install Ansible
-if [[ ! -x /usr/local/bin/ansible ]]; then
-    echo "Info  | Install   | ansible"
-    brew install ansible
-fi
-
-# Clone down dotfiles
-if [[ ! -d $CFG_DIRECTORY ]]; then
-    git clone https://github.com/mmcdole/dotfiles $CFG_DIRECTORY 
-fi
-
-ansible-playbook -i $CFG_DIRECTORY/ansible/inventory $CFG_DIRECTORY/ansible/main.yml
+stow vim -t ~
+stow git -t ~
+stow zsh -t ~

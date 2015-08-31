@@ -9,6 +9,8 @@ taps=(
 )
 
 formulae=(
+  vim --override-system-vi
+  stow
   brew-cask
   git
   go
@@ -16,7 +18,6 @@ formulae=(
   tmux
   cmake
   curl
-#  rtorrent
   python
   coreutils
   nmap
@@ -24,7 +25,6 @@ formulae=(
   hub
   selecta
   wget
-  vim --override-system-vi
   cloc
 )
 
@@ -51,7 +51,6 @@ casks=(
   quicklook-csv
   quicklook-json
   virtualbox
-  iexplorer
 )
 
 if ! brew doctor; then
