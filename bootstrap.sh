@@ -19,7 +19,7 @@ if [[ ! -x /usr/bin/gcc ]]; then
 fi
 
 # Delete any broken symlinks in home
-find ~ -maxdepth 1 -follow  -type l -delete
+find -L ~ -type l -exec rm {} \;
 
 sh scripts/brew.sh
 sh scripts/osx.sh
