@@ -1,6 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =4
-let g:netrw_dirhist_1='/Users/mmcdole/.dotfiles/vim/.vim/bundle/rust.vim/syntax'
-let g:netrw_dirhist_2='/Users/mmcdole/Documents/code'
-let g:netrw_dirhist_3='/Users/mmcdole/Documents/code/nestor'
-let g:netrw_dirhist_4='/Users/mmcdole/Documents/code/nestor/src'
