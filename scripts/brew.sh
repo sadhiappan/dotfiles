@@ -30,6 +30,7 @@ formulae=(
 )
 
 casks=(
+  seil
   iterm2
   hipchat
   sequel-pro
