@@ -26,6 +26,7 @@
 	helper = osxkeychain
 [core]
 	excludesfile = /Users/mmcdole/.gitignore_global
+	editor = /usr/local/bin/vim
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 

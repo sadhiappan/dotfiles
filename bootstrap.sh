@@ -26,3 +26,4 @@ sh scripts/osx.sh
 stow vim -t ~
 stow git -t ~
 stow zsh -t ~
+stow tmux -t ~

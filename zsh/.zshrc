@@ -85,4 +85,10 @@ source $ZSH/oh-my-zsh.sh
 #
 export GOPATH="/Users/mmcdole/go"
 
-alias pod="cd ~/go/src/bitbucket.org/halfword"
+alias pd="cd ~/go/src/bitbucket.org/halfword"
+
+export WORKON_HOME=$HOME/.virtualenvs
+source /usr/local/bin/virtualenvwrapper.sh
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi

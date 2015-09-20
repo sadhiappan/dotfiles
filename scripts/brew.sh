@@ -20,6 +20,7 @@ formulae=(
   cmake
   curl
   python
+  fzf
   coreutils
   nmap
   tree
@@ -27,6 +28,7 @@ formulae=(
   selecta
   wget
   cloc
+  reattach-to-user-namespace
 )
 
 casks=(
@@ -56,12 +58,12 @@ casks=(
   virtualbox
 )
 
-if ! brew doctor; then
-  echo "
-\`brew doctor\` failed. Please resolve issues before continuing.
-  "
-  exit 1
-fi
+#if ! brew doctor; then
+#  echo "
+#\`brew doctor\` failed. Please resolve issues before continuing.
+#  "
+#  exit 1
+#fi
 
 for tap in "${taps[@]}"; do
   brew tap $tap
