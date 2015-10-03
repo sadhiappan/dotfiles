@@ -16,6 +16,8 @@ formulae=(
   git
   go
   tintin
+  irssi
+  ranger
   tmux
   cmake
   curl
@@ -29,6 +31,8 @@ formulae=(
   wget
   cloc
   reattach-to-user-namespace
+  mitmproxy
+  youtube-dl
 )
 
 casks=(
