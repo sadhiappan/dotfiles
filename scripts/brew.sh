@@ -20,6 +20,7 @@ formulae=(
   ranger
   tmux
   cmake
+  httpie
   curl
   python
   fzf
@@ -33,6 +34,7 @@ formulae=(
   reattach-to-user-namespace
   mitmproxy
   youtube-dl
+  ansible
 )
 
 casks=(
