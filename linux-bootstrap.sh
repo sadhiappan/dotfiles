@@ -11,6 +11,8 @@ sudo -v
 # Delete any broken symlinks in home
 find -L ~ -type l -exec rm {} \;
 
+sh scripts/linux.sh
+
 stow vim -t ~
 stow git -t ~
 stow zsh -t ~

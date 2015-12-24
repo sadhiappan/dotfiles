@@ -35,6 +35,7 @@ formulae=(
   mitmproxy
   youtube-dl
   ansible
+  weechat --with-perl --with-python
 )
 
 casks=(
