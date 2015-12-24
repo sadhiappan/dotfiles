@@ -69,3 +69,8 @@ extract() {
 	  echo $i - $uuid
 	done
 }
+
+
+export FLEX_ACCESS_KEY_ID="AKIAIJDU3YLHS6ZCPS2Q"
+export FLEX_SECRET_ACCESS_KEY="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"
+export FLEX_DEFAULT_REGION="us-west-2"
