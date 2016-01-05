@@ -16,7 +16,6 @@ formulae=(
   git
   go
   tintin
-  irssi
   ranger
   tmux
   cmake
@@ -28,7 +27,7 @@ formulae=(
   nmap
   tree
   hub
-  selecta
+  binutils
   wget
   cloc
   reattach-to-user-namespace

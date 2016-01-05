@@ -1,4 +1,43 @@
-#!/bin/bash
+#!/bin/bash -e
+
+packages=(
+	vim
+  stow
+  git
+  golang
+  tintin
+  irssi
+  ranger
+  tmux
+  cmake
+  httpie
+  curl
+  python
+  fzf
+  coreutils
+  nmap
+  tree
+  hub
+  selecta
+  wget
+  cloc
+  reattach-to-user-namespace
+  mitmproxy
+  youtube-dl
+  ansible
+  weechat --with-perl --with-python
+)
+
+casks=(
+  seil
+  iterm2
+  hipchat
+  sequel-pro
+  google-chrome
+  alfred
+  sublime-text
+  dropbox
+  1password
 
 cd "$(dirname "${BASH_SOURCE}")";
 

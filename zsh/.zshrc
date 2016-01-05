@@ -26,6 +26,7 @@ export EDITOR='vim'
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #
+alias helix="muxssh helix"
 alias pcast="cd ~/go/src/bitbucket.org/halfword"
 alias code="cd ~/code"
 
@@ -70,6 +71,10 @@ extract() {
 	done
 }
 
+
+muxssh () {
+  /usr/bin/ssh -t $@ "tmux attach || tmux new";
+}
 
 export FLEX_ACCESS_KEY_ID="AKIAIJDU3YLHS6ZCPS2Q"
 export FLEX_SECRET_ACCESS_KEY="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"
