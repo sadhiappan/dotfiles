@@ -49,6 +49,7 @@ casks=(
   1password
   citrix-receiver
   transmission
+  telegram
   vlc
   openemu
   keepingyouawake
