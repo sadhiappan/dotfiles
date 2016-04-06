@@ -35,6 +35,8 @@ formulae=(
   youtube-dl
   ansible
   weechat --with-perl --with-python
+  gpg
+  keybase
 )
 
 casks=(

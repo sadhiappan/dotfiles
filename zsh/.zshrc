@@ -16,7 +16,12 @@ plugins=(git)
 
 # User configuration
 
-export PATH="/Users/mmcdole/.dotfiles/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
+export PATH="/Users/mmcdole/go/bin:$PATH"
+export PATH="/home/david/pear/bin:$PATH"
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
+
+export GOPATH="/Users/mmcdole/go"
+export GOBIN="$GOPATH/bin"
 
 source $ZSH/oh-my-zsh.sh
 
@@ -27,11 +32,14 @@ export EDITOR='vim'
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #
 alias helix="muxssh helix"
-alias pcast="cd ~/go/src/bitbucket.org/halfword"
-alias code="cd ~/code"
 
-export GOPATH="/Users/mmcdole/go"
+alias sa="s -p amazon"
+alias sw="s -p wikipedia"
+alias sy="s -p youtube"
 
+shn() { s "$@" site:news.ycombinator.com; }
+
+# export GOBIN="/Users/mmcdole/go/bin"
 
 # Setup FZF 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
@@ -75,7 +83,3 @@ extract() {
 muxssh () {
   /usr/bin/ssh -t $@ "tmux attach || tmux new";
 }
-
-export FLEX_ACCESS_KEY_ID="AKIAIJDU3YLHS6ZCPS2Q"
-export FLEX_SECRET_ACCESS_KEY="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"
-export FLEX_DEFAULT_REGION="us-west-2"

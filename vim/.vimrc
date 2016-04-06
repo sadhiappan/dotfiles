@@ -107,7 +107,8 @@ set sidescroll=1
 color jellybeans
 nnoremap <leader>ev :vsplit ~/.vimrc<cr>
 nnoremap <leader>sv :source ~/.vimrc<cr>
-
+nnoremap <Leader>e :e <C-R>=expand('%:p:h') . '/'<CR>
+set pastetoggle=<leader>p
 nnoremap <leader>rr :RustRun<cr>
 nnoremap <leader>tr :RustRun! --test<cr>
 let delimitMate_expand_cr=1
