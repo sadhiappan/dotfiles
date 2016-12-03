@@ -12,7 +12,6 @@ formulae=(
   vim --override-system-vi
   stow
   ssh-copy-id
-  brew-cask
   git
   go
   tintin
@@ -64,7 +63,6 @@ casks=(
   qlmarkdown
   quicklook-csv
   quicklook-json
-  virtualbox
 )
 
 #if ! brew doctor; then

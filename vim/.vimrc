@@ -33,12 +33,17 @@ syntax on
 " the plugins.
 let mapleader=","
 
-" =============== Vundle Initialization ===============
-" This loads all the plugins specified in ~/.vim/vundle.vim
-" Use Vundle plugin to manage all other plugins
-if filereadable(expand("~/.vim/vundles.vim"))
-  source ~/.vim/vundles.vim
-endif
+" =============== vim-plug Initialization ===============
+" This loads all the plugins specified below
+
+call plug#begin('~/.vim/plugged')
+plug 'tpope/vim-surround'
+plug 'tpope/vim-fugitive'
+Plug 'fatih/vim-go'
+Plug 'wting/rust.vim'
+Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+call plug#end()
 
 " ================ Turn Off Swap Files ==============
 
