@@ -37,8 +37,8 @@ let mapleader=","
 " This loads all the plugins specified below
 
 call plug#begin('~/.vim/plugged')
-plug 'tpope/vim-surround'
-plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-fugitive'
 Plug 'fatih/vim-go'
 Plug 'wting/rust.vim'
 Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
