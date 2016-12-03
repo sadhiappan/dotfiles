@@ -5,11 +5,11 @@ which -s brew || ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebre
 
 taps=(
   homebrew/binary
-  caskroom/cask
 )
 
 formulae=(
   vim --override-system-vi
+  fzf
   stow
   ssh-copy-id
   git
@@ -21,7 +21,6 @@ formulae=(
   httpie
   curl
   python
-  fzf
   coreutils
   nmap
   tree
@@ -29,7 +28,6 @@ formulae=(
   binutils
   wget
   cloc
-  reattach-to-user-namespace
   mitmproxy
   youtube-dl
   ansible
@@ -54,7 +52,6 @@ casks=(
   vlc
   openemu
   keepingyouawake
-  java
   steam
   spotify
   calibre
