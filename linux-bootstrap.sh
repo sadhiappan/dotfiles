@@ -2,6 +2,7 @@
 
 packages=(
 	vim
+  fzf
   stow
   git
   golang
@@ -13,7 +14,6 @@ packages=(
   httpie
   curl
   python
-  fzf
   coreutils
   nmap
   tree
@@ -21,7 +21,6 @@ packages=(
   selecta
   wget
   cloc
-  reattach-to-user-namespace
   mitmproxy
   youtube-dl
   ansible
@@ -38,6 +37,7 @@ casks=(
   sublime-text
   dropbox
   1password
+)
 
 cd "$(dirname "${BASH_SOURCE}")";
 
