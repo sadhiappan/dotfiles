@@ -31,7 +31,6 @@ formulae=(
   mitmproxy
   youtube-dl
   ansible
-  weechat --with-perl --with-python
   gpg
   keybase
 )
@@ -39,16 +38,11 @@ formulae=(
 casks=(
   seil
   iterm2
-  hipchat
-  sequel-pro
   google-chrome
   alfred
   sublime-text
   dropbox
   1password
-  citrix-receiver
-  transmission
-  telegram
   vlc
   openemu
   keepingyouawake
@@ -60,6 +54,7 @@ casks=(
   qlmarkdown
   quicklook-csv
   quicklook-json
+  bartender
 )
 
 #if ! brew doctor; then

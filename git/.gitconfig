@@ -1,6 +1,6 @@
 [user]
-	name = Matthew McDole
-	email = matthew.d.mcdole@ehi.com
+	name = Shiv Adhiappan
+	email = shivaram1190@gmail.com
 [push]
 	default = current
 [alias]
@@ -27,7 +27,7 @@
 [credential]
 	helper = osxkeychain
 [core]
-	excludesfile = /Users/mmcdole/.gitignore_global
+	excludesfile = /Users/shivadhiappan/.gitignore_global
 	editor = /usr/local/bin/vim
 [tag]
 	sort = version:refname

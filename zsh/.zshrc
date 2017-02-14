@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/mmcdole/.oh-my-zsh
+export ZSH=/Users/shivadhiappan/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -16,11 +16,11 @@ plugins=(git)
 
 # User configuration
 
-export PATH="/Users/mmcdole/go/bin:$PATH"
+export PATH="/Users/shivadhiappan/go/bin:$PATH"
 export PATH="/home/david/pear/bin:$PATH"
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
 
-export GOPATH="/Users/mmcdole/go"
+export GOPATH="/Users/shivadhiappan/go"
 export GOBIN="$GOPATH/bin"
 
 source $ZSH/oh-my-zsh.sh
