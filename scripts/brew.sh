@@ -55,6 +55,7 @@ casks=(
   quicklook-csv
   quicklook-json
   bartender
+  private-internet-access
 )
 
 #if ! brew doctor; then
